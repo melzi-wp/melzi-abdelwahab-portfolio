@@ -4,59 +4,92 @@ body{
   padding: 0px;
 
 }
-nav{
+header{
+  background:linear-gradient(to right, rgb(184, 211, 214),rgb(226, 245, 247));
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.959);
   z-index: 1;
+} 
+header h1{
+  color:black;
+  font-size: 20px;
+  font-weight: 600;
+  word-spacing: 5px;
+  margin: 10px;      
 }
-ul{
-  margin-left:25%;
+.nav-bar {
+  list-style: none;
+  margin: 10px 0px; 
 }
-li{
-  display: inline-block;  
-  margin-left: 50px; 
-}
-a{
+.nav-bar li{
   text-decoration: none;
-  color: white;
+  display: inline-block;  
+  padding: 0px 20px;
 }
-a:hover{
-  color:rgb(235, 137, 166) ;
+.nav-bar a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.671);
+  font-size: 16px;
+  font-weight: 600; 
+  cursor: pointer;
 }
+.nav-bar a:hover{
+  color:rgb(230, 233, 47) ;
+  font-size: 18px;
+}
+.nav-bar a:active{
+  color:rgb(240, 237, 50) ;
+} 
 
 /* section home */
 #home{
- background-color: rgba(0, 0, 0, 0.918);
- padding-top: 200px;
- padding-left: 150px;
- height: 70vh; 
+ /* background-color: 99CCFF; */
+ background-image: url(../res/WEB-Full-Stack-Developer.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding-top: 180px;
+ padding-left: 40px;
+ height: 90vh;
+ /* border-bottom-right-radius: 50px ;  */
 }
 
 .hello h1{
-  color: white;
+  color: rgb(50, 50, 88);
+  width: 270px;
   font-size: 30px;
+  line-height: 1.50em;
+  font-weight: bold;
+  padding: 0%;
+  border-right: 5px solid rgb(155, 39, 39);
 }
 .hello p{
   color:rgb(235, 137, 166);
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 80px;
 }
 #home img{
   position: absolute;
-  top: 20%;
+  top: 10%;
   right: 100px;  
   width: 500px;
-  height: 380px;
+  height: 350px;
   /* border: 3px solid rgb(109, 139, 221) ; */
   border-radius: 50%;
 }
 /* section about me */
- #about{
+#about{
+  background-color: 99CCFF;
+  
+}
+ .about{
+  padding: 10%;
   background-color: white;
-  margin-top: 100px;
   height: 300px;
   position: relative;
+  /* border-top-left-radius: 200px; */
 }
 
 .about-me{
@@ -101,7 +134,7 @@ a:hover{
   position: relative;
   width: 100%;
   height: 500px;
-  margin-top: 15px;
+  margin-top: 150px;
 }
 .skill{
   color: brown;
@@ -110,7 +143,7 @@ a:hover{
 .front-end{
   position: absolute;
   width: 320px;
-  background-color:rgb(247, 242, 241) ;
+  background-color:white ;
   margin-left: 20%;
   padding-left: 5px;
   top: 80px;
@@ -118,17 +151,74 @@ a:hover{
 .front-end h1 {
   text-align: center;
 }
-
+.progress-info{
+  background-color: white;
+  height:100px;
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.progress-info img{
+  width: 50px;
+  height: 50px;
+ 
+  /* border-radius: 50%; */
+}
+.progress-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border:3px solid rgb(247, 209, 202);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progress-icon h1{
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0%;
+  text-transform: uppercase;
+}
 .progress{
+  margin: 0%;
+  padding: 0%;
   width: 300px;
-  height: 20px;
-  border: 3px solid black;
-  border-radius: 10%;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.progress-html{
+  width: 75%;
+  padding: 0%;
+  height: 100%;
+  background: linear-gradient(to left,rgb(245, 198, 111), rgb(255, 115, 0) );
+  border-radius: 20px;
+  text-align: center;
+}
+.progress-css{
+  width: 50%;
+  padding: 0%;
+  height: 100%;
+  background: linear-gradient(to left,rgb(1, 194, 253), rgb(29, 79, 155) );
+  border-radius: 20px;
+  text-align: center;
+}
+.progress-js{
+  width: 20%;
+  padding: 0%;
+  height: 100%;
+  background: linear-gradient(to left, rgb(251, 255, 0), rgb(253, 215, 1));
+  border-radius: 20px;
+  text-align: center;
 }
 .back-end{
   position: absolute;
   width: 320px;
-  background-color: rgb(247, 240, 231);
+  background-color: white;
   right: 20%;
   top:80;
   padding-left: 5px;
@@ -140,6 +230,7 @@ a:hover{
   background-color: black; 
   position: relative;
   height: 500px;
+  margin-top: 100px;
 }
 .form{
   position: absolute;
